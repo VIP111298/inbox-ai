@@ -14,10 +14,8 @@ REDIRECT_URI = os.getenv(
     "http://localhost:8000/auth/callback"
 )
 
-credentials_file = os.path.join(
-    os.path.dirname(__file__),
-    "credentials.json"
-)
+credentials_file = "/etc/secrets/credentials.json"
+
 
 # Hackathon MVP: keep OAuth flow in memory
 oauth_flow = None
