@@ -1,3 +1,4 @@
+import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import "./App.css";
 import {
@@ -512,9 +513,9 @@ function App() {
 
               <Bot size={18} />
 
-              <p>
-                {chatAnswer}
-              </p>
+              <div className="chat-answer-content">
+  <ReactMarkdown>{chatAnswer}</ReactMarkdown>
+</div>
 
             </div>
           )}
